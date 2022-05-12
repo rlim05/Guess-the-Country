@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var quizManager = QuizManager()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack(spacing: 40) {
+                Text("Guess That Flag!")
+                    .font(.title)
+                    .fontWeight(.heavy)
+                }
+            NavigationLink {
+                FlagQuizView()
+                    .environmentObject(quizManager)
+            } label: {
+            PrimaryButton(text: "Start")
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .ignoresSafeArea(.all)
     }
 }
 
@@ -19,5 +33,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-// hello
-dsad

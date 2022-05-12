@@ -11,6 +11,7 @@
 		3F97857B282D5CEC00725763 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97857A282D5CEC00725763 /* ContentView.swift */; };
 		3F97857D282D5CF100725763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F97857C282D5CF100725763 /* Assets.xcassets */; };
 		3F978580282D5CF100725763 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F97857F282D5CF100725763 /* Preview Assets.xcassets */; };
+		3F978587282D629100725763 /* FlagQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F978586282D629100725763 /* FlagQuizView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3F97857A282D5CEC00725763 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3F97857C282D5CF100725763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F97857F282D5CF100725763 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F978586282D629100725763 /* FlagQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagQuizView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3F978578282D5CEC00725763 /* Guess_the_CountryApp.swift */,
 				3F97857A282D5CEC00725763 /* ContentView.swift */,
+				3F978586282D629100725763 /* FlagQuizView.swift */,
 				3F97857C282D5CF100725763 /* Assets.xcassets */,
 				3F97857E282D5CF100725763 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F978587282D629100725763 /* FlagQuizView.swift in Sources */,
 				3F97857B282D5CEC00725763 /* ContentView.swift in Sources */,
 				3F978579282D5CEC00725763 /* Guess_the_CountryApp.swift in Sources */,
 			);
