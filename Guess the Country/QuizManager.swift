@@ -15,6 +15,7 @@ class QuizManager: ObservableObject {
     @Published private(set) var reachedEnd = false
     @Published private(set) var answerSelected = false
     @Published private(set) var flag = ""
+    @Published private(set) var country = ""
     @Published private(set) var answerChoices = [Answer]()
     @Published private(set) var progress: CGFloat = 0.0
     @Published private(set) var score = 0
@@ -47,6 +48,15 @@ class QuizManager: ObservableObject {
         if index < length {
             let currentQuizQuestion = questions[index]
             flag = currentQuizQuestion.correctAnswer.text
+            answerChoices = ([currentQuizQuestion.correctAnswer] + currentQuizQuestion.incorrectAnswers).shuffled()
+        }
+    }
+    func setQuestion() {
+        answerSelected = false
+        progress = CGFloat((index + 1) / length * 350)
+        if index < length {
+            let currentQuizQuestion = questions[index]
+            country = currentQuizQuestion.correctAnswer.text
             answerChoices = ([currentQuizQuestion.correctAnswer] + currentQuizQuestion.incorrectAnswers).shuffled()
         }
     }

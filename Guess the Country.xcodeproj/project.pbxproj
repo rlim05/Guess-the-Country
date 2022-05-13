@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F453279282EB5100099A735 /* CountryQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F453278282EB5100099A735 /* CountryQuizView.swift */; };
+		3F45327B282EB5F40099A735 /* CountryQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45327A282EB5F40099A735 /* CountryQuestions.swift */; };
+		3F45327D282EB76D0099A735 /* CountryQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45327C282EB76D0099A735 /* CountryQuestionView.swift */; };
 		3F978579282D5CEC00725763 /* Guess_the_CountryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F978578282D5CEC00725763 /* Guess_the_CountryApp.swift */; };
 		3F97857B282D5CEC00725763 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97857A282D5CEC00725763 /* ContentView.swift */; };
 		3F97857D282D5CF100725763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F97857C282D5CF100725763 /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F453278282EB5100099A735 /* CountryQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryQuizView.swift; sourceTree = "<group>"; };
+		3F45327A282EB5F40099A735 /* CountryQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryQuestions.swift; sourceTree = "<group>"; };
+		3F45327C282EB76D0099A735 /* CountryQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryQuestionView.swift; sourceTree = "<group>"; };
 		3F978575282D5CEC00725763 /* Guess the Country.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess the Country.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F978578282D5CEC00725763 /* Guess_the_CountryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_the_CountryApp.swift; sourceTree = "<group>"; };
 		3F97857A282D5CEC00725763 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,9 +73,12 @@
 			children = (
 				3F978578282D5CEC00725763 /* Guess_the_CountryApp.swift */,
 				3F97857A282D5CEC00725763 /* ContentView.swift */,
+				3F453278282EB5100099A735 /* CountryQuizView.swift */,
 				3FA2AF09282D667200AFE4C7 /* QuizView.swift */,
 				3F978594282DD65600725763 /* Questions.swift */,
+				3F45327A282EB5F40099A735 /* CountryQuestions.swift */,
 				3F978596282DD9A600725763 /* QuestionView.swift */,
+				3F45327C282EB76D0099A735 /* CountryQuestionView.swift */,
 				3F978590282DB69900725763 /* QuizManager.swift */,
 				3F97858A282DB37700725763 /* PrimaryButton.swift */,
 				3F97858C282DB42F00725763 /* ProgressBar.swift */,
@@ -158,10 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F45327B282EB5F40099A735 /* CountryQuestions.swift in Sources */,
 				3F978597282DD9A600725763 /* QuestionView.swift in Sources */,
 				3F978595282DD65600725763 /* Questions.swift in Sources */,
+				3F45327D282EB76D0099A735 /* CountryQuestionView.swift in Sources */,
 				3F978591282DB69900725763 /* QuizManager.swift in Sources */,
 				3FA2AF0A282D667200AFE4C7 /* QuizView.swift in Sources */,
+				3F453279282EB5100099A735 /* CountryQuizView.swift in Sources */,
 				3F97858B282DB37700725763 /* PrimaryButton.swift in Sources */,
 				3F97857B282D5CEC00725763 /* ContentView.swift in Sources */,
 				3F97858F282DB4B800725763 /* AnswerRow.swift in Sources */,
