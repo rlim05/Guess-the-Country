@@ -17,7 +17,7 @@ struct ContentView: View {
                     .fontWeight(.heavy)
                 }
             NavigationLink {
-                FlagQuizView()
+                QuizView()
                     .environmentObject(quizManager)
             } label: {
             PrimaryButton(text: "Start")
