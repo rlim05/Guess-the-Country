@@ -27,8 +27,7 @@ struct Questions {
                 Question(correctAnswer: Answer(text: "United Kingdom", isCorrect: true),
                          incorrectAnswers: [Answer(text: "United States of America", isCorrect: false),
                                             Answer(text: "Malaysia", isCorrect: false),
-                                            Answer(text: "Australia", isCorrect: false),
-                                            Answer(text: "Venezuela", isCorrect: false)])]
+                                            Answer(text: "Australia", isCorrect: false)])]
 }
 
 struct Question: Identifiable {

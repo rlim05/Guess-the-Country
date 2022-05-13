@@ -12,22 +12,25 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 40) {
-                Text("Guess That Flag!")
-                    .font(.title)
-                    .fontWeight(.heavy)
+                VStack(spacing: 20) {
+                    Text("Guess That Country!")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color("AccentColor"))
                 }
-            NavigationLink {
-                QuizView()
-                    .environmentObject(quizManager)
-            } label: {
-            PrimaryButton(text: "Start")
+                NavigationLink {
+                    QuizView()
+                        .environmentObject(quizManager)
+                } label: {
+                    PrimaryButton(text: "Start")
+                }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .ignoresSafeArea(.all)
+            .background(Color(hue: 0.599, saturation: 0.433, brightness: 0.971))
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .ignoresSafeArea(.all)
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

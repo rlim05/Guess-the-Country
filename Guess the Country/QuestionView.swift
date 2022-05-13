@@ -12,12 +12,11 @@ struct QuestionView: View {
     var body: some View {
         VStack(spacing: 20) {
             HStack {
-                Text("Guess That Flag")
+                Text("Guess That Country!")
                     .foregroundColor(Color("AccentColor"))
                     .font(.title)
                     .fontWeight(.heavy)
-                Spacer()
-                Text("\(quizManager.index + 1) out of \(quizManager.length)")
+                Text("\(quizManager.index + 1) out of (\(quizManager.length)")
                     .foregroundColor(Color("AccentColor"))
                     .fontWeight(.heavy)
             }
@@ -30,10 +29,10 @@ struct QuestionView: View {
                     .frame(width: 300, height: 200)
                 ForEach(quizManager.answerChoices) { answer in
                     AnswerRow(answer: answer)
-                        .environentObject(quizManager)
+                        .environmentObject(quizManager)
                 }
             }
-            Button {
+            Button{
                 quizManager.goToNextQuestion()
             } label: {
                 PrimaryButton(text: "Next", background: quizManager.answerSelected ? Color("AccentColor") : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))

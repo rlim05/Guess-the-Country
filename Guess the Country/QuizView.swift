@@ -19,7 +19,7 @@ struct QuizView: View {
                 Button {
                     quizManager.reset()
                 } label: {
-                    primaryButton(text: "play again")
+                    PrimaryButton(text: "Play Again")
                 }
             }
             .foregroundColor(Color("AccentColor"))
