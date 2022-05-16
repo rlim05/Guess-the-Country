@@ -22,18 +22,12 @@ struct ContentView: View {
                     QuizView()
                         .environmentObject(quizManager)
                 } label: {
-                    PrimaryButton(text: "Flag Quiz Start")
+                    PrimaryButton(text: "Start")
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea(.all)
             .background(Color(hue: 0.599, saturation: 0.433, brightness: 0.971))
-            NavigationLink {
-                CountryQuizView()
-                    .environmentObject(quizManager)
-            } label: {
-                PrimaryButton(text: "Country Quiz Start")
-            }
         }
     }
 }
