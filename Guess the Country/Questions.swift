@@ -16,6 +16,12 @@ struct Questions {
                          incorrectAnswers: [Answer(text: "New Zealand", isCorrect: false),
                                             Answer(text: "Indonesia", isCorrect: false),
                                             Answer(text: "Iran", isCorrect: false)]),
+                
+                Question(correctAnswer: Answer(text: "Hungary", isCorrect: true),
+                         incorrectAnswers: [Answer(text: "Iceland", isCorrect: false),
+                                            Answer(text: "Singapore", isCorrect: false),
+                                            Answer(text: "Ireland", isCorrect: false)]),
+                
                 Question(correctAnswer: Answer(text: "Mexico", isCorrect: true),
                          incorrectAnswers: [Answer(text: "Netherlands", isCorrect: false),
                                             Answer(text: "Russia", isCorrect: false),
@@ -48,6 +54,7 @@ struct Questions {
                          incorrectAnswers: [Answer(text: "Canada", isCorrect: false),
                                             Answer(text: "United Kingdom", isCorrect: false),
                                             Answer(text: "Australia", isCorrect: false)])]
+    
 }
 
 struct Question: Identifiable {
