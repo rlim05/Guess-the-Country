@@ -15,8 +15,8 @@ struct ContentView: View {
                 VStack(spacing: 20) {
                     Text("Guess That Country!")
                         .font(.title)
-                        .fontWeight(.heavy)
-                        .foregroundColor(Color("AccentColor"))
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
                 }
                 NavigationLink {
                     QuizView()

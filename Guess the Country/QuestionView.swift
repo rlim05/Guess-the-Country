@@ -13,11 +13,11 @@ struct QuestionView: View {
         VStack(spacing: 20) {
             HStack {
                 Text("Guess That Country!")
-                    .foregroundColor(Color("AccentColor"))
+                    .foregroundColor(.black)
                     .font(.title)
                     .fontWeight(.heavy)
-                Text("\(quizManager.index + 1) out of (\(quizManager.length)")
-                    .foregroundColor(Color("AccentColor"))
+                Text("\(quizManager.index + 1) out of \(quizManager.length)")
+                    .foregroundColor(.black)
                     .fontWeight(.heavy)
             }
             ProgressBar(progress: quizManager.progress)
@@ -35,7 +35,7 @@ struct QuestionView: View {
             Button{
                 quizManager.goToNextQuestion()
             } label: {
-                PrimaryButton(text: "Next", background: quizManager.answerSelected ? Color("AccentColor") : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
+                PrimaryButton(text: "Next", background: quizManager.answerSelected ? .black : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
             }
             .disabled(!quizManager.answerSelected)
             Spacer()

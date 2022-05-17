@@ -27,7 +27,7 @@ struct AnswerRow: View {
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
-        .foregroundColor(quizManager.answerSelected ? (isSelected ? Color("AccentColor") : .gray) : Color("AccentColor"))
+        .foregroundColor(quizManager.answerSelected ? (isSelected ? .black : .gray) : .black)
         .background(.white)
         .cornerRadius(10)
         .shadow(color: isSelected ? (answer.isCorrect ? green : red) : .gray, radius: 5, x: 0.5, y: 0.5)
